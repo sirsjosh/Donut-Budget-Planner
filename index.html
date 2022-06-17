@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bumbeishvili/d3-tip-for-v6@4/d3-tip.min.css"/>
+    <title>Donut Chart</title>
+  </head>
+  <body class="indigo">
+    <header class="indigo darken-1 section">
+      <h2 class="center white-text">Ninja Wonga</h2>
+      <p class="flow-text grey-text center text-lighten-2">Monthly Money Trackers </p>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col m6 s12">
+          <form class="card z-depth-0"> 
+            <div class="card-content">
+            <span class="card-title indigo-text">Add Item:</span>
+            <div class="input-field">
+              <input type="text" id="name">
+              <label for="name">Item Name</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="cost">
+              <label for="cost">Item Cost($)</label>
+            </div>
+            <div class="input-field center">
+              <button class="btn-large pink white-text">Add Item</button>
+            </div>
+            <div class="input-field center">
+             <p class="red-text center" id="error"> </p>
+            </div>
+          </div>
+          </form>
+        </div>
+        <div class="col m5 s12 push-m1 ">
+          <div class="canvas"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js" integrity="sha512-wNH6xsp2n8CfB91nrBtfc4sfLwYPBMjSWVUwQOp60AYYXH6i8yCwuKFZ4rgK2i6pQek/b+bSyR7b01/922IBzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/d3-v6-tip@1.0.6/build/d3-v6-tip.js"></script>
+    <script type="module" src="/graph.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

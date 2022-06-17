@@ -1,0 +1,10 @@
+.d3-tip{
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+.d3-tip .delete{
+    color: hotpink;
+    font-size: 0.8em;
+}
